@@ -20,6 +20,7 @@ import scripts.SPZeahBloods.constants.Animations;
 import scripts.SPZeahBloods.constants.ObjectNames;
 import scripts.SPZeahBloods.constants.Positions;
 import scripts.SPZeahBloods.actions.AFK;
+import scripts.SPZeahBloods.util.ACamera;
 
 public class Mining {
     public static final boolean isMining() {
@@ -27,7 +28,7 @@ public class Mining {
         return (anim == Animations.MINE_STANDING_ANIM || anim == Animations.MINE_CROUCHED_ANIM);
     }
 
-    public static final void handleMining() {
+    public static final void handleMining(ACamera aCamera) {
         RSObject[] objects = Objects.findNearest(40, ObjectNames.DENSE_RUNE_STONE_NAME);
         Camera.setRotationMethod(Camera.ROTATION_METHOD.ONLY_KEYS);
 
@@ -36,10 +37,12 @@ public class Mining {
             // If the other essence block can be chipped, look at it.
             if (objects.length == 2) {
                 RSTile tile = objects[1].getPosition();
-                Camera.turnToTile(tile);
+                aCamera.turnToTile(tile);
             }
 
-            Mouse.leaveGame(true);
+            if (isMining()) {
+                Mouse.leaveGame(true);
+            }
         } else {
             if (AFK.shouldAFK()) {
                 AFK.sleep();
@@ -48,7 +51,7 @@ public class Mining {
             // If essence can be chipped
             if (objects.length > 0) {
                 RSTile tile = objects[0].getPosition();
-                Camera.turnToTile(tile);
+                aCamera.turnToTile(tile);
                 DynamicClicking.clickRSObject(objects[0], 1);
 
                 Timing.waitCondition(new Condition() {

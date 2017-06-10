@@ -12,13 +12,14 @@ import scripts.SPZeahBloods.actions.Mining;
 import scripts.SPZeahBloods.actions.Traveling;
 import scripts.SPZeahBloods.constants.ItemIds;
 import scripts.SPZeahBloods.constants.Positions;
-
+import scripts.SPZeahBloods.util.ACamera;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
 public class SPZeahBloods extends Script {
 
     private State state;
     private boolean shouldCraftFull = true;
+    private ACamera aCamera = new ACamera(this);
 
     @Override
     public void run() {
@@ -31,7 +32,7 @@ public class SPZeahBloods extends Script {
             state = getState();
             switch (state) {
                 case MINING:
-                    Mining.handleMining();
+                    Mining.handleMining(aCamera);
                     break;
                 case TRAVELING_TO_DARK_ALTAR:
                     Traveling.handleDarkAltar();
