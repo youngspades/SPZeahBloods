@@ -48,7 +48,7 @@ public class Mining {
                 Camera.turnToTile(tile);
                 General.sleep(135, 345);
                 DynamicClicking.clickRSObject(objects[0], 1);
-                General.sleep(1250, 2000);
+                General.sleep(1650, 2350);
             } else {
                 WebWalking.walkTo(Positions.getMineArea().getRandomTile());
             }
