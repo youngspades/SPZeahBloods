@@ -4,6 +4,7 @@
 
 package scripts;
 
+import org.tribot.api.DynamicClicking;
 import org.tribot.api.General;
 import org.tribot.api2007.*;
 import org.tribot.api2007.types.*;
@@ -23,6 +24,9 @@ public class SPZeahBloods extends Script {
     private final int DARK_ESSENCE_BLOCK_ID = 13446;
     private final int DARK_ESSENCE_FRAGMENTS_ID = 7938;
     private final int CHISEL_ID = 1755;
+
+    private final int MINE_STANDING_ANIM = 624;
+    private final int MINE_CROUCHED_ANIM = 7201;
 
     private final RSTile MINE_TO_DARK_ALTAR_SHORTCUT_TILE = new RSTile(1761, 3872, 0);
     private final RSTile DARK_ALTAR_TO_MINE_SHORTCUT_TILE = new RSTile(1761, 3873, 0);
@@ -60,6 +64,7 @@ public class SPZeahBloods extends Script {
             state = getState();
             switch (state) {
                 case MINING:
+                    handleMining();
                     break;
                 case TRAVELING_TO_DARK_ALTAR:
                     break;
@@ -85,14 +90,12 @@ public class SPZeahBloods extends Script {
 
     private State getState() {
         if (atMine()) {
-            println("at mine");
             if (Inventory.isFull()) {
                 if (Inventory.getCount(DENSE_ESSENCE_BLOCK_ID) > 10) {
                     println("travel to dark altar");
                     return State.TRAVELING_TO_DARK_ALTAR;
                 }
             } else {
-                println("mine");
                 return State.MINING;
             }
         } else if (atDarkAltar()) {
@@ -157,5 +160,33 @@ public class SPZeahBloods extends Script {
 
     private boolean atBloodAltar() {
         return BLOOD_ALTAR_AREA.contains(Player.getPosition());
+    }
+
+    private boolean isMining() {
+        int anim = Player.getAnimation();
+        return (anim == MINE_STANDING_ANIM || anim == MINE_CROUCHED_ANIM);
+    }
+
+    private void handleMining() {
+        RSObject[] objects = Objects.findNearest(15, DENSE_RUNE_STONE_NAME);
+
+        if (isMining()|| Player.isMoving()) {
+
+            if (objects.length == 2) {
+                RSTile tile = objects[1].getPosition();
+                Camera.turnToTile(tile);
+            }
+        } else {
+            if (objects.length > 0) {
+                println("clicking Object");
+                RSTile tile = objects[0].getPosition();
+                Camera.turnToTile(tile);
+                DynamicClicking.clickRSObject(objects[0], 1);
+            } else {
+                WebWalking.walkTo(MINE_AREA.getRandomTile());
+            }
+        }
+
+        sleep(475, 900);
     }
 }
