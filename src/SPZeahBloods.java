@@ -4,7 +4,6 @@
 
 package scripts.SPZeahBloods;
 
-import actions.Traveling;
 import org.tribot.api.General;
 import org.tribot.api2007.*;
 import org.tribot.script.Script;

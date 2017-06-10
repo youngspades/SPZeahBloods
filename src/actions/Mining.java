@@ -14,6 +14,8 @@ import org.tribot.api2007.Player;
 import org.tribot.api2007.WebWalking;
 import org.tribot.api2007.types.RSObject;
 import org.tribot.api2007.types.RSTile;
+import org.tribot.api.Timing;
+import org.tribot.api.types.generic.Condition;
 import scripts.SPZeahBloods.constants.Animations;
 import scripts.SPZeahBloods.constants.ObjectNames;
 import scripts.SPZeahBloods.constants.Positions;
@@ -46,11 +48,17 @@ public class Mining {
             // If essence can be chipped
             if (objects.length > 0) {
                 RSTile tile = objects[0].getPosition();
-                General.sleep(150, 330);
                 Camera.turnToTile(tile);
-                General.sleep(135, 345);
                 DynamicClicking.clickRSObject(objects[0], 1);
-                General.sleep(1650, 2350);
+
+                Timing.waitCondition(new Condition() {
+                    @Override
+                    public boolean active() {
+                        General.sleep(100); // Add this in to reduce CPU usage
+                        return (isMining() || Player.isMoving());
+                    }
+                }, General.random(1350, 2350));
+
             } else {
                 WebWalking.walkTo(Positions.getMineArea().getRandomTile());
             }
