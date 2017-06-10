@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99fba64c-9ce2-4244-8bb4-91fa22d2e970" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SPZeahBloods.java" afterPath="$PROJECT_DIR$/src/SPZeahBloods.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/Mining.java" afterPath="$PROJECT_DIR$/src/actions/Mining.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="SPZeahBloods.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="-15">
+              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Traveling.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Traveling.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/Traveling.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="240">
+              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -40,28 +40,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mining.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Mining.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/actions/Mining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="388">
+              <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
-                <element signature="e#0#1797#0" expanded="true" />
+                <element signature="e#0#1908#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AFK.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/AFK.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,6 +82,7 @@
       <find>camera</find>
       <find>Camera</find>
       <find>objects</find>
+      <find>AFK</find>
     </findStrings>
     <replaceStrings>
       <replace>abc_util</replace>
@@ -123,9 +110,9 @@
         <option value="$PROJECT_DIR$/src/constants/Animations.java" />
         <option value="$PROJECT_DIR$/src/mining/Mining.java" />
         <option value="$PROJECT_DIR$/src/actions/AFK.java" />
-        <option value="$PROJECT_DIR$/src/actions/Mining.java" />
         <option value="$PROJECT_DIR$/src/SPZeahBloods.java" />
         <option value="$PROJECT_DIR$/src/actions/Traveling.java" />
+        <option value="$PROJECT_DIR$/src/actions/Mining.java" />
       </list>
     </option>
   </component>
@@ -523,7 +510,7 @@
         <state relative-caret-position="60">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1797#0" expanded="true" />
+            <element signature="e#0#1908#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -653,35 +640,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/AFK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="-15">
+          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/Mining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#1797#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -689,10 +653,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/Traveling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="240">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/AFK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/Mining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#1908#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

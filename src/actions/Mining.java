@@ -31,6 +31,7 @@ public class Mining {
 
         if (isMining()|| Player.isMoving()) {
 
+            // If the other essence block can be chipped, look at it.
             if (objects.length == 2) {
                 RSTile tile = objects[1].getPosition();
                 Camera.turnToTile(tile);
@@ -42,6 +43,7 @@ public class Mining {
                 AFK.sleep();
             }
 
+            // If essence can be chipped
             if (objects.length > 0) {
                 RSTile tile = objects[0].getPosition();
                 General.sleep(150, 330);
