@@ -7,6 +7,7 @@ package scripts.SPZeahBloods.actions;
 
 import org.tribot.api.General;
 import org.tribot.api.DynamicClicking;
+import org.tribot.api.input.Mouse;
 import org.tribot.api2007.Camera;
 import org.tribot.api2007.Objects;
 import org.tribot.api2007.Player;
@@ -34,11 +35,13 @@ public class Mining {
                 RSTile tile = objects[1].getPosition();
                 Camera.turnToTile(tile);
             }
+
+            Mouse.leaveGame(true);
         } else {
             if (AFK.shouldAFK()) {
                 AFK.sleep();
             }
-            
+
             if (objects.length > 0) {
                 RSTile tile = objects[0].getPosition();
                 General.sleep(150, 330);

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99fba64c-9ce2-4244-8bb4-91fa22d2e970" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SPZeahBloods.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods$State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scripts/SPZeahBloods.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/Mining.java" afterPath="$PROJECT_DIR$/src/actions/Mining.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,10 +30,10 @@
       <file leaf-file-name="Mining.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/actions/Mining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+            <state relative-caret-position="403">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <element signature="e#0#1738#0" expanded="true" />
+                <element signature="e#0#1797#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -512,7 +507,7 @@
         <state relative-caret-position="60">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1738#0" expanded="true" />
+            <element signature="e#0#1797#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -664,10 +659,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/Mining.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        <state relative-caret-position="403">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1738#0" expanded="true" />
+            <element signature="e#0#1797#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
