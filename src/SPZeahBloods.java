@@ -8,11 +8,15 @@ import org.tribot.api.General;
 import org.tribot.api2007.*;
 import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
-import scripts.SPZeahBloods.actions.Mining;
 import scripts.SPZeahBloods.actions.Traveling;
 import scripts.SPZeahBloods.constants.ItemIds;
 import scripts.SPZeahBloods.constants.Positions;
 import scripts.SPZeahBloods.util.ACamera;
+import scripts.SPZeahBloods.util.Task;
+import scripts.SPZeahBloods.util.TaskSet;
+import scripts.SPZeahBloods.tasks.MineBlock;
+import scripts.SPZeahBloods.tasks.LookAtOtherBlock;
+
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
 public class SPZeahBloods extends Script {
@@ -20,11 +24,23 @@ public class SPZeahBloods extends Script {
     private State state;
     private boolean shouldCraftFull = true;
     private ACamera aCamera = new ACamera(this);
+    TaskSet taskSet = new TaskSet();
+
 
     @Override
     public void run() {
         General.useAntiBanCompliance(true);
-        loop(230, 550);
+
+        taskSet.addAll(new MineBlock(), new LookAtOtherBlock());
+        while (true) {
+            sleep(40, 75);
+            Task task = taskSet.getValidTask();
+            if (task != null) {
+                task.execute();
+                println(task);
+            }
+        }
+        //loop(230, 550);
     }
 
     private void loop(int min, int max) {
@@ -32,7 +48,6 @@ public class SPZeahBloods extends Script {
             state = getState();
             switch (state) {
                 case MINING:
-                    Mining.handleMining(aCamera);
                     break;
                 case TRAVELING_TO_DARK_ALTAR:
                     Traveling.handleDarkAltar();
@@ -50,7 +65,7 @@ public class SPZeahBloods extends Script {
                 case CREATING_BLOOD_RUNES:
                     break;
             }
-            sleep(min, max);
+
         }
     }
 
