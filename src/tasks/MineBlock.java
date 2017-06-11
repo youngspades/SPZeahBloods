@@ -12,11 +12,11 @@ import org.tribot.api2007.types.RSObject;
 import org.tribot.api2007.types.RSTile;
 import org.tribot.api.Timing;
 import org.tribot.api.types.generic.Condition;
+import scripts.SPZeahBloods.SPZeahBloods;
 import scripts.SPZeahBloods.constants.Animations;
 import scripts.SPZeahBloods.constants.ObjectNames;
 import scripts.SPZeahBloods.constants.Positions;
 import scripts.SPZeahBloods.actions.AFK;
-import scripts.SPZeahBloods.util.ACamera;
 import scripts.SPZeahBloods.util.Task;
 
 public class MineBlock implements Task {
@@ -39,20 +39,21 @@ public class MineBlock implements Task {
         if (objects.length > 0) {
             General.println("essence can be chipped");
             RSTile tile = objects[0].getPosition();
-            Camera.turnToTile(tile);
+            SPZeahBloods.aCamera.turnToTile(tile);
             if (objects[0].isOnScreen()) {
-                DynamicClicking.clickRSObject(objects[0], "Chip");
-                General.println("essence on screen");
-                Timing.waitCondition(new Condition() {
-                    @Override
-                    public boolean active() {
-                        General.sleep(100); // Add this in to reduce CPU usage
-                        return (Animations.isMining() || Player.isMoving());
-                    }
-                }, General.random(1350, 2350));
+                if (DynamicClicking.clickRSObject(objects[0], "Chip")) {
+                    General.println("essence on screen");
+                    Timing.waitCondition(new Condition() {
+                        @Override
+                        public boolean active() {
+                            General.sleep(100); // Add this in to reduce CPU usage
+                            return (Animations.isMining() || Player.isMoving());
+                        }
+                    }, General.random(1350, 2350));
+                } else {
+                    WebWalking.walkTo(Positions.getMineArea().getRandomTile());
+                }
             }
-        } else {
-            WebWalking.walkTo(Positions.getMineArea().getRandomTile());
         }
     }
 }

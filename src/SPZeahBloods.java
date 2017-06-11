@@ -18,14 +18,17 @@ import scripts.SPZeahBloods.tasks.MineBlock;
 import scripts.SPZeahBloods.tasks.LookAtOtherBlock;
 import scripts.SPZeahBloods.tasks.GoToExitShortcut;
 import scripts.SPZeahBloods.tasks.GoOverExitShortcut;
+import scripts.SPZeahBloods.tasks.GoToDarkAltar;
+import scripts.SPZeahBloods.tasks.CraftEssence;
 import org.tribot.api.util.abc.ABCUtil;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
 public class SPZeahBloods extends Script {
 
+    public static ACamera aCamera = new ACamera();
+
     private State state;
     private boolean shouldCraftFull = true;
-    private ACamera aCamera = new ACamera(this);
     ABCUtil abcUtil = new ABCUtil();
     TaskSet taskSet = new TaskSet();
     String status = "";
@@ -34,7 +37,14 @@ public class SPZeahBloods extends Script {
     public void run() {
         General.useAntiBanCompliance(true);
 
-        taskSet.addAll(new MineBlock(), new LookAtOtherBlock(), new GoToExitShortcut(), new GoOverExitShortcut());
+        taskSet.addAll(
+                new MineBlock(),
+                new LookAtOtherBlock(),
+                new GoToExitShortcut(),
+                new GoOverExitShortcut(),
+                new GoToDarkAltar(),
+                new CraftEssence()
+        );
         while (true) {
             sleep(40, 75);
             Task task = taskSet.getValidTask();

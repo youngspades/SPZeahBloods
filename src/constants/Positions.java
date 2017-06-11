@@ -33,6 +33,10 @@ public class Positions {
             new RSTile(1705, 3880, 0),
     });
 
+    public static final RSArea getDarkAltarArea() {
+        return Positions.DARK_ALTAR_AREA;
+    }
+
     private static final RSArea BLOOD_ALTAR_AREA = new RSArea(new RSTile[] {
             new RSTile(1733, 3835, 0),
             new RSTile(1736, 3826, 0),
@@ -41,6 +45,10 @@ public class Positions {
             new RSTile(1713, 3834, 0),
             new RSTile(1721, 3832, 0),
     });
+
+    public static final RSArea getBloodAltarArea() {
+        return Positions.EXIT_MINE_AGILITY_AREA;
+    }
 
     private static final RSArea EXIT_MINE_AGILITY_AREA = new RSArea(new RSTile[] {
             new RSTile(1761, 3871, 0),
