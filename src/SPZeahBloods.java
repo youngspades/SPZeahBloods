@@ -16,7 +16,7 @@ import scripts.SPZeahBloods.util.Task;
 import scripts.SPZeahBloods.util.TaskSet;
 import scripts.SPZeahBloods.tasks.MineBlock;
 import scripts.SPZeahBloods.tasks.LookAtOtherBlock;
-
+import org.tribot.api.util.abc.ABCUtil;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
 public class SPZeahBloods extends Script {
@@ -24,8 +24,9 @@ public class SPZeahBloods extends Script {
     private State state;
     private boolean shouldCraftFull = true;
     private ACamera aCamera = new ACamera(this);
+    ABCUtil abcUtil = new ABCUtil();
     TaskSet taskSet = new TaskSet();
-
+    String status = "";
 
     @Override
     public void run() {
@@ -37,6 +38,34 @@ public class SPZeahBloods extends Script {
             Task task = taskSet.getValidTask();
             if (task != null) {
                 task.execute();
+                status = task.toString();
+                switch (status) {
+                    case "Look At Other Block":
+                        // Here our player is idling, so we can check/perform the timed actions.
+                        if (this.abcUtil.shouldCheckTabs())
+                            this.abcUtil.checkTabs();
+
+                        if (this.abcUtil.shouldCheckXP())
+                            this.abcUtil.checkXP();
+
+                        if (this.abcUtil.shouldExamineEntity())
+                            this.abcUtil.examineEntity();
+
+                        if (this.abcUtil.shouldMoveMouse())
+                            this.abcUtil.moveMouse();
+
+                        if (this.abcUtil.shouldPickupMouse())
+                            this.abcUtil.pickupMouse();
+
+                        if (this.abcUtil.shouldRightClick())
+                            return;
+
+                        if (this.abcUtil.shouldRotateCamera())
+                            this.abcUtil.rotateCamera();
+
+                        if (this.abcUtil.shouldLeaveGame())
+                            this.abcUtil.leaveGame();
+                }
                 println(task);
             }
         }

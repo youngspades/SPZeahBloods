@@ -4,7 +4,6 @@ package scripts.SPZeahBloods.tasks;
  * Created by Adar on 6/10/17.
  */
 
-import org.tribot.api.input.Mouse;
 import org.tribot.api2007.Camera;
 import org.tribot.api2007.Objects;
 import org.tribot.api2007.types.RSObject;
@@ -34,7 +33,10 @@ public class LookAtOtherBlock implements Task {
             RSTile tile = objects[1].getPosition();
             Camera.turnToTile(tile);
         }
+    }
 
-        Mouse.leaveGame();
+    @Override
+    public String toString() {
+        return "Look At Other Block";
     }
 }

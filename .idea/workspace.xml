@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99fba64c-9ce2-4244-8bb4-91fa22d2e970" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/actions/Mining$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/actions/Mining.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/AFK.java" afterPath="$PROJECT_DIR$/src/tasks/AFK.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/Mining.java" afterPath="$PROJECT_DIR$/src/tasks/MineBlock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/actions/Traveling.java" afterPath="$PROJECT_DIR$/src/tasks/Traveling.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$1.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$State.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$State.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/constants/Animations.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/constants/Animations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/LookAtOtherBlock.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/LookAtOtherBlock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SPZeahBloods.java" afterPath="$PROJECT_DIR$/src/SPZeahBloods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/Animations.java" afterPath="$PROJECT_DIR$/src/constants/Animations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tasks/LookAtOtherBlock.java" afterPath="$PROJECT_DIR$/src/tasks/LookAtOtherBlock.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SPZeahBloods.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SPZeahBloods.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="124">
+              <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -42,15 +37,11 @@
       <file leaf-file-name="MineBlock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="157">
+              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
               <folding>
                 <element signature="e#0#1862#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,7 +50,7 @@
       <file leaf-file-name="Animations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/constants/Animations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="240">
               <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -68,13 +59,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LookAtOtherBlock.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LookAtOtherBlock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tasks/LookAtOtherBlock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +87,6 @@
       <find>getAn</find>
       <find>this.abc_util</find>
       <find>mining</find>
-      <find>abc_util</find>
       <find>private final</find>
       <find>public final</find>
       <find>sleep(0</find>
@@ -108,18 +100,24 @@
       <find>camera</find>
       <find>Camera</find>
       <find>objects</find>
-      <find>AFK</find>
       <find>clickRS</find>
       <find>TaskSet</find>
       <find>run()</find>
       <find>isMining</find>
       <find>MineBlock</find>
       <find>mine</find>
+      <find>AFK</find>
+      <find>Mouse</find>
+      <find>ABCutil</find>
+      <find>abc_util</find>
+      <find>leave</find>
+      <find>leaveGame</find>
     </findStrings>
     <replaceStrings>
       <replace>abc_util</replace>
       <replace>public final</replace>
       <replace>public static final</replace>
+      <replace>abcUtil</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -149,9 +147,9 @@
         <option value="$PROJECT_DIR$/src/util/TaskSet.java" />
         <option value="$PROJECT_DIR$/src/tasks/Mining.java" />
         <option value="$PROJECT_DIR$/src/constants/Animations.java" />
-        <option value="$PROJECT_DIR$/src/tasks/MineBlock.java" />
         <option value="$PROJECT_DIR$/src/tasks/LookAtOtherBlock.java" />
         <option value="$PROJECT_DIR$/src/SPZeahBloods.java" />
+        <option value="$PROJECT_DIR$/src/tasks/MineBlock.java" />
       </list>
     </option>
   </component>
@@ -574,10 +572,6 @@
           <folding>
             <element signature="e#0#1862#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -632,10 +626,6 @@
           <folding>
             <element signature="e#0#1862#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,10 +658,6 @@
           <folding>
             <element signature="e#0#1862#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -840,9 +826,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#1862#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/Animations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="240">
           <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -850,37 +847,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
+    <entry file="file://$PROJECT_DIR$/src/tasks/LookAtOtherBlock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="318">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding>
-            <element signature="e#0#1862#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        <state relative-caret-position="124">
+          <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/LookAtOtherBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
