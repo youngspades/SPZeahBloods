@@ -44,24 +44,21 @@ public class Mining {
                 Mouse.leaveGame(true);
             }
         } else {
-            if (AFK.shouldAFK()) {
-                AFK.sleep();
-            }
-
             // If essence can be chipped
             if (objects.length > 0) {
                 RSTile tile = objects[0].getPosition();
                 aCamera.turnToTile(tile);
-                DynamicClicking.clickRSObject(objects[0], 1);
+                if (objects[0].isOnScreen()) {
+                    DynamicClicking.clickRSObject(objects[0], "Chip");
 
-                Timing.waitCondition(new Condition() {
-                    @Override
-                    public boolean active() {
-                        General.sleep(100); // Add this in to reduce CPU usage
-                        return (isMining() || Player.isMoving());
-                    }
-                }, General.random(1350, 2350));
-
+                    Timing.waitCondition(new Condition() {
+                        @Override
+                        public boolean active() {
+                            General.sleep(100); // Add this in to reduce CPU usage
+                            return (isMining() || Player.isMoving());
+                        }
+                    }, General.random(1350, 2350));
+                }
             } else {
                 WebWalking.walkTo(Positions.getMineArea().getRandomTile());
             }

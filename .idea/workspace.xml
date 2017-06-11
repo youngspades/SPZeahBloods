@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99fba64c-9ce2-4244-8bb4-91fa22d2e970" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SPZeahBloods.java" afterPath="$PROJECT_DIR$/src/SPZeahBloods.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/Mining.java" afterPath="$PROJECT_DIR$/src/actions/Mining.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,13 +44,13 @@
       <file leaf-file-name="Mining.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/actions/Mining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+            <state relative-caret-position="247">
+              <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
               <folding>
-                <element signature="e#0#2315#0" expanded="true" />
+                <element signature="e#0#2337#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1876#2154#0" expanded="true" />
-                <element signature="e#2153#2154#0" expanded="true" />
+                <element signature="e#1857#2159#0" expanded="true" />
+                <element signature="e#2158#2159#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,6 +106,7 @@
       <find>Camera</find>
       <find>objects</find>
       <find>AFK</find>
+      <find>clickRS</find>
     </findStrings>
     <replaceStrings>
       <replace>abc_util</replace>
@@ -576,10 +575,10 @@
         <state relative-caret-position="165">
           <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
-            <element signature="e#0#2315#0" expanded="true" />
+            <element signature="e#0#2337#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1876#2154#0" expanded="true" />
-            <element signature="e#2153#2154#0" expanded="true" />
+            <element signature="e#1857#2159#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -610,10 +609,10 @@
         <state relative-caret-position="60">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#2315#0" expanded="true" />
+            <element signature="e#0#2337#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1876#2154#0" expanded="true" />
-            <element signature="e#2153#2154#0" expanded="true" />
+            <element signature="e#1857#2159#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -779,13 +778,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/Mining.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="247">
+          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
           <folding>
-            <element signature="e#0#2315#0" expanded="true" />
+            <element signature="e#0#2337#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1876#2154#0" expanded="true" />
-            <element signature="e#2153#2154#0" expanded="true" />
+            <element signature="e#1857#2159#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
