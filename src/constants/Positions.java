@@ -4,6 +4,8 @@
 
 package scripts.SPZeahBloods.constants;
 
+import javafx.geometry.Pos;
+import obf.PO;
 import org.tribot.api2007.Player;
 import org.tribot.api2007.types.RSArea;
 import org.tribot.api2007.types.RSTile;
@@ -30,6 +32,7 @@ public class Positions {
             new RSTile(1709, 3887, 0),
             new RSTile(1705, 3880, 0),
     });
+
     private static final RSArea BLOOD_ALTAR_AREA = new RSArea(new RSTile[] {
             new RSTile(1733, 3835, 0),
             new RSTile(1736, 3826, 0),
@@ -38,6 +41,16 @@ public class Positions {
             new RSTile(1713, 3834, 0),
             new RSTile(1721, 3832, 0),
     });
+
+    private static final RSArea EXIT_MINE_AGILITY_AREA = new RSArea(new RSTile[] {
+            new RSTile(1761, 3871, 0),
+            new RSTile(1766, 3869, 0),
+            new RSTile(1757, 3868, 0),
+    });
+
+    public static final RSArea getExitMineAgilityArea() {
+        return Positions.EXIT_MINE_AGILITY_AREA;
+    }
 
     public static boolean atMine() {
         return Positions.MINE_AREA.contains(Player.getPosition());

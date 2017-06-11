@@ -16,6 +16,8 @@ import scripts.SPZeahBloods.util.Task;
 import scripts.SPZeahBloods.util.TaskSet;
 import scripts.SPZeahBloods.tasks.MineBlock;
 import scripts.SPZeahBloods.tasks.LookAtOtherBlock;
+import scripts.SPZeahBloods.tasks.GoToExitShortcut;
+import scripts.SPZeahBloods.tasks.GoOverExitShortcut;
 import org.tribot.api.util.abc.ABCUtil;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
@@ -32,7 +34,7 @@ public class SPZeahBloods extends Script {
     public void run() {
         General.useAntiBanCompliance(true);
 
-        taskSet.addAll(new MineBlock(), new LookAtOtherBlock());
+        taskSet.addAll(new MineBlock(), new LookAtOtherBlock(), new GoToExitShortcut(), new GoOverExitShortcut());
         while (true) {
             sleep(40, 75);
             Task task = taskSet.getValidTask();

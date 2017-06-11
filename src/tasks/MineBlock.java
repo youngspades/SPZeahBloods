@@ -7,11 +7,7 @@ package scripts.SPZeahBloods.tasks;
 
 import org.tribot.api.General;
 import org.tribot.api.DynamicClicking;
-import org.tribot.api.input.Mouse;
-import org.tribot.api2007.Camera;
-import org.tribot.api2007.Objects;
-import org.tribot.api2007.Player;
-import org.tribot.api2007.WebWalking;
+import org.tribot.api2007.*;
 import org.tribot.api2007.types.RSObject;
 import org.tribot.api2007.types.RSTile;
 import org.tribot.api.Timing;
@@ -32,7 +28,7 @@ public class MineBlock implements Task {
 
     @Override
     public boolean validate() {
-        return (!Animations.isMining() && !Player.isMoving());
+        return (!Animations.isMining() && !Player.isMoving() && !Inventory.isFull());
     }
 
     @Override
@@ -41,11 +37,12 @@ public class MineBlock implements Task {
 
         // If essence can be chipped
         if (objects.length > 0) {
+            General.println("essence can be chipped");
             RSTile tile = objects[0].getPosition();
             Camera.turnToTile(tile);
             if (objects[0].isOnScreen()) {
                 DynamicClicking.clickRSObject(objects[0], "Chip");
-
+                General.println("essence on screen");
                 Timing.waitCondition(new Condition() {
                     @Override
                     public boolean active() {
