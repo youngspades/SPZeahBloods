@@ -20,13 +20,13 @@ public class GoOverExitShortcut implements Task {
 
     @Override
     public int priority() {
-        return 0;
+        return 1;
     }
 
     @Override
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
-        return (Inventory.isFull() && !Positions.atDarkAltar() && tile.distanceTo(playerPos) <= 5 &&
+        return (Inventory.isFull() && !Positions.atDarkAltar() && tile.distanceTo(playerPos) <= 9 &&
                 Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) > Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
     }
 
@@ -40,6 +40,6 @@ public class GoOverExitShortcut implements Task {
                 General.sleep(100); // Add this in to reduce CPU usage
                 return (!Player.isMoving() && Player.getAnimation() != Animations.CLIMB_ANIM);
             }
-        }, General.random(2500, 3300));
+        }, General.random(1250, 2200));
     }
 }

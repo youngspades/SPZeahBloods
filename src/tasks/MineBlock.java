@@ -28,7 +28,7 @@ public class MineBlock implements Task {
     @Override
     public boolean validate() {
         return (!Animations.isMining() && !Player.isMoving() && !Inventory.isFull() &&
-                    Positions.getMineArea().contains(Player.getPosition())
+                    Positions.atMine()
                 );
     }
 
@@ -51,9 +51,17 @@ public class MineBlock implements Task {
                             return (Animations.isMining() || Player.isMoving());
                         }
                     }, General.random(1350, 2350));
-                } else {
-                    WebWalking.walkTo(Positions.getMineArea().getRandomTile());
                 }
+            } else {
+                General.println("should be walking");
+                Walking.clickTileMM(Positions.getSeeMineArea().getRandomTile(), 1);
+                Timing.waitCondition(new Condition() {
+                    @Override
+                    public boolean active() {
+                        General.sleep(100); // Add this in to reduce CPU usage
+                        return (Player.isMoving());
+                    }
+                }, General.random(1350, 2350));
             }
         }
     }

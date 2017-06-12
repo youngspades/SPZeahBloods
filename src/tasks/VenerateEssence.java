@@ -42,12 +42,10 @@ public class VenerateEssence implements Task {
 
         // If essence can be chipped
         if (objects.length > 0) {
-            General.println("altar");
             RSTile tile = objects[0].getPosition();
             SPZeahBloods.aCamera.turnToTile(tile);
             if (objects[0].isOnScreen()) {
                 if (DynamicClicking.clickRSObject(objects[0], "Venerate")) {
-                    General.println("essence on screen");
                     Timing.waitCondition(new Condition() {
                         @Override
                         public boolean active() {

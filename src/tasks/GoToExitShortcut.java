@@ -31,14 +31,14 @@ public class GoToExitShortcut implements Task {
     @Override
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
-        return (Inventory.isFull() && !Positions.atDarkAltar() && tile.distanceTo(playerPos) > 8 &&
+        return (Inventory.isFull() && !Positions.atDarkAltar() &&
                 Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) > Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
     }
 
     @Override
     public void execute() {
         if (!Walking.clickTileMM(tile, 1))
-            WebWalking.walkTo(Positions.getExitMineAgilityArea().getRandomTile());
+            WebWalking.walkTo(tile);
 
         SPZeahBloods.aCamera.turnToTile(tile);
         Timing.waitCondition(new Condition() {

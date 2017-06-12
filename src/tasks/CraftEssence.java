@@ -26,8 +26,7 @@ public class CraftEssence implements Task {
     @Override
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
-        return (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) > 1 && Inventory.getCount(ItemIds.CHISEL_ID) == 1) &&
-                Positions.atDarkAltar();
+        return (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) > 1 && Inventory.getCount(ItemIds.CHISEL_ID) == 1);
     }
 
     @Override
@@ -40,7 +39,6 @@ public class CraftEssence implements Task {
             if (Game.getSelectedItemName() == ObjectNames.DENSE_RUNE_STONE_NAME) {
                 chisel.click();
             } else {
-                General.println("NOT SELECTED");
                 chisel.click();
             }
         }

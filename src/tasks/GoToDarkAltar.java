@@ -24,7 +24,6 @@ public class GoToDarkAltar implements Task {
     @Override
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
-        General.println("SHOULD GO TO DARK ALTAR " + (Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos)));
         return (/*Inventory.isFull() && !Positions.atDarkAltar() && */ Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
     }
 
