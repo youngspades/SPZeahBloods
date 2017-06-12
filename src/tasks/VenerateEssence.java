@@ -23,7 +23,7 @@ public class VenerateEssence implements Task {
 
     @Override
     public int priority() {
-        return 0;
+        return 1;
     }
 
     @Override
