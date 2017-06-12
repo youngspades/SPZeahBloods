@@ -17,7 +17,6 @@ import scripts.SPZeahBloods.SPZeahBloods;
 import scripts.SPZeahBloods.constants.Animations;
 import scripts.SPZeahBloods.constants.ObjectNames;
 import scripts.SPZeahBloods.constants.Positions;
-import scripts.SPZeahBloods.actions.AFK;
 import scripts.SPZeahBloods.util.Task;
 
 public class GoToExitShortcut implements Task {

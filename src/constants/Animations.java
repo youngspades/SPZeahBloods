@@ -16,4 +16,5 @@ public class Animations {
 
     public static final int CRAFT_ANIM = 7202;
     public static final int CLIMB_ANIM = 839;
+    public static final int VENERATE_ANIM = 645;
 }

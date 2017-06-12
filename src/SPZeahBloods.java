@@ -8,7 +8,6 @@ import org.tribot.api.General;
 import org.tribot.api2007.*;
 import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
-import scripts.SPZeahBloods.actions.Traveling;
 import scripts.SPZeahBloods.constants.ItemIds;
 import scripts.SPZeahBloods.constants.Positions;
 import scripts.SPZeahBloods.util.ACamera;
@@ -20,6 +19,7 @@ import scripts.SPZeahBloods.tasks.GoToExitShortcut;
 import scripts.SPZeahBloods.tasks.GoOverExitShortcut;
 import scripts.SPZeahBloods.tasks.GoToDarkAltar;
 import scripts.SPZeahBloods.tasks.CraftEssence;
+import scripts.SPZeahBloods.tasks.VenerateEssence;
 import org.tribot.api.util.abc.ABCUtil;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
@@ -43,7 +43,8 @@ public class SPZeahBloods extends Script {
                 new GoToExitShortcut(),
                 new GoOverExitShortcut(),
                 new GoToDarkAltar(),
-                new CraftEssence()
+                new CraftEssence(),
+                new VenerateEssence()
         );
         while (true) {
             sleep(40, 75);
@@ -91,17 +92,14 @@ public class SPZeahBloods extends Script {
                 case MINING:
                     break;
                 case TRAVELING_TO_DARK_ALTAR:
-                    Traveling.handleDarkAltar();
                     break;
                 case VENERATING_ESSENCE:
                     break;
                 case CRAFTING_ESSENCE:
                     break;
                 case RETURNING_TO_MINE:
-                    Traveling.handleReturnToMine();
                     break;
                 case TRAVELING_TO_BLOOD_ALTAR:
-                    Traveling.handleBloodAltar();
                     break;
                 case CREATING_BLOOD_RUNES:
                     break;

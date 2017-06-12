@@ -2,13 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99fba64c-9ce2-4244-8bb4-91fa22d2e970" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoOverExitShortcut$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoOverExitShortcut.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/LookAtOtherBlock.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/LookAtOtherBlock.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/actions/AFK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/actions/Traveling.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/CraftEssence$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tasks/AFK.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tasks/Traveling.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$1.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$State.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods$State.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/SPZeahBloods.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/constants/Animations.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/constants/Animations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/constants/ObjectNames.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/constants/ObjectNames.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/CraftEssence.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/CraftEssence.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoOverExitShortcut$1.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoOverExitShortcut$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoOverExitShortcut.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoOverExitShortcut.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToDarkAltar$1.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToDarkAltar$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToDarkAltar.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToDarkAltar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToExitShortcut$1.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToExitShortcut$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToExitShortcut.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/GoToExitShortcut.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/MineBlock$1.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/MineBlock$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/MineBlock.class" afterPath="$PROJECT_DIR$/out/production/SPZeahBloods/scripts/SPZeahBloods/tasks/MineBlock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SPZeahBloods.java" afterPath="$PROJECT_DIR$/src/SPZeahBloods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/Positions.java" afterPath="$PROJECT_DIR$/src/constants/Positions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/Animations.java" afterPath="$PROJECT_DIR$/src/constants/Animations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/ObjectNames.java" afterPath="$PROJECT_DIR$/src/constants/ObjectNames.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tasks/CraftEssence.java" afterPath="$PROJECT_DIR$/src/tasks/CraftEssence.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java" afterPath="$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tasks/GoToDarkAltar.java" afterPath="$PROJECT_DIR$/src/tasks/GoToDarkAltar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tasks/GoToExitShortcut.java" afterPath="$PROJECT_DIR$/src/tasks/GoToExitShortcut.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tasks/MineBlock.java" afterPath="$PROJECT_DIR$/src/tasks/MineBlock.java" />
     </list>
@@ -23,84 +42,39 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SPZeahBloods.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoToExitShortcut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tasks/GoToExitShortcut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Positions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/constants/Positions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoToDarkAltar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tasks/GoToDarkAltar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoOverExitShortcut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1375#1642#0" expanded="true" />
-                <element signature="e#1641#1642#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CraftEssence.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tasks/CraftEssence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="450">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VenerateEssence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tasks/VenerateEssence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#2294#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1660#2001#0" expanded="true" />
+                <element signature="e#2000#2001#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemIds.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/ItemIds.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,13 +82,11 @@
       <file leaf-file-name="MineBlock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+            <state relative-caret-position="269">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <element signature="e#0#1932#0" expanded="true" />
+                <element signature="e#0#1986#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1433#1746#0" expanded="true" />
-                <element signature="e#1745#1746#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,7 +123,6 @@
       <find>isMining</find>
       <find>MineBlock</find>
       <find>mine</find>
-      <find>AFK</find>
       <find>Mouse</find>
       <find>ABCutil</find>
       <find>abc_util</find>
@@ -159,6 +130,8 @@
       <find>leaveGame</find>
       <find>Camera</find>
       <find>println</find>
+      <find>AFK</find>
+      <find>getMine</find>
     </findStrings>
     <replaceStrings>
       <replace>abc_util</replace>
@@ -181,7 +154,6 @@
         <option value="$PROJECT_DIR$/../../TRiBot.jar!/org/tribot/script/Script.class" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
         <option value="$PROJECT_DIR$/src/scripts/SPZeahBloods.java" />
-        <option value="$PROJECT_DIR$/src/constants/ObjectNames.java" />
         <option value="$PROJECT_DIR$/src/constants/ItemIds.java" />
         <option value="$PROJECT_DIR$/src/mining/Mining.java" />
         <option value="$PROJECT_DIR$/src/actions/AFK.java" />
@@ -192,23 +164,25 @@
         <option value="$PROJECT_DIR$/src/util/Task.java" />
         <option value="$PROJECT_DIR$/src/util/TaskSet.java" />
         <option value="$PROJECT_DIR$/src/tasks/Mining.java" />
-        <option value="$PROJECT_DIR$/src/constants/Animations.java" />
         <option value="$PROJECT_DIR$/src/tasks/LookAtOtherBlock.java" />
-        <option value="$PROJECT_DIR$/src/tasks/CraftEssence.java" />
-        <option value="$PROJECT_DIR$/src/tasks/MineBlock.java" />
+        <option value="$PROJECT_DIR$/src/constants/Positions.java" />
+        <option value="$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java" />
+        <option value="$PROJECT_DIR$/src/constants/ObjectNames.java" />
+        <option value="$PROJECT_DIR$/src/constants/Animations.java" />
+        <option value="$PROJECT_DIR$/src/tasks/GoToExitShortcut.java" />
         <option value="$PROJECT_DIR$/src/SPZeahBloods.java" />
         <option value="$PROJECT_DIR$/src/tasks/GoToDarkAltar.java" />
-        <option value="$PROJECT_DIR$/src/constants/Positions.java" />
-        <option value="$PROJECT_DIR$/src/tasks/GoToExitShortcut.java" />
-        <option value="$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java" />
+        <option value="$PROJECT_DIR$/src/tasks/VenerateEssence.java" />
+        <option value="$PROJECT_DIR$/src/tasks/MineBlock.java" />
+        <option value="$PROJECT_DIR$/src/tasks/CraftEssence.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-238" />
+    <option name="x" value="326" />
     <option name="y" value="-1057" />
-    <option name="width" value="1348" />
-    <option name="height" value="864" />
+    <option name="width" value="1317" />
+    <option name="height" value="942" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -228,8 +202,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SPZeahBloods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="SPZeahBloods" />
@@ -310,16 +296,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -558,13 +542,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-238" y="-1057" width="1348" height="864" extended-state="0" />
+    <frame x="326" y="-1057" width="1317" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -576,7 +560,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23367952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23917995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -588,7 +573,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -605,6 +589,94 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#1986#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="66" column="53" lean-forward="false" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/Positions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/GoToDarkAltar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/CraftEssence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#1986#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/GoToExitShortcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -633,10 +705,8 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -677,7 +747,7 @@
         <state relative-caret-position="45">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1932#0" expanded="true" />
+            <element signature="e#0#1986#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -711,10 +781,8 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,7 +803,7 @@
         <state relative-caret-position="165">
           <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
-            <element signature="e#0#1932#0" expanded="true" />
+            <element signature="e#0#1986#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -745,9 +813,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +833,7 @@
         <state relative-caret-position="60">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1932#0" expanded="true" />
+            <element signature="e#0#1986#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -777,9 +843,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -790,10 +854,8 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -845,34 +907,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ItemIds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ObjectNames.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/Actions.java" />
     <entry file="file://$PROJECT_DIR$/src/tasks/Traveling.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -880,9 +920,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,95 +970,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/ObjectNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/Animations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="270">
+          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../webwalker_logic/WebWalker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/GoToExitShortcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SPZeahBloods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        <state relative-caret-position="134">
+          <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="49" column="57" lean-forward="false" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#1932#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1433#1746#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/GoToExitShortcut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tasks/GoToDarkAltar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/ItemIds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/Positions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="360">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/GoOverExitShortcut.java">
+    <entry file="file://$PROJECT_DIR$/src/tasks/VenerateEssence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="213">
+          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
           <folding>
+            <element signature="e#0#2294#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1375#1642#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
+            <element signature="e#1660#2001#0" expanded="true" />
+            <element signature="e#2000#2001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/MineBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1986#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tasks/CraftEssence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="450">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
           </folding>
         </state>
       </provider>

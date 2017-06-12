@@ -4,19 +4,12 @@ package scripts.SPZeahBloods.tasks;
  * Created by Adar on 6/11/17.
  */
 
-import javafx.geometry.Pos;
 import org.tribot.api.General;
-import org.tribot.api.DynamicClicking;
-import org.tribot.api.input.Mouse;
 import org.tribot.api2007.*;
-import org.tribot.api2007.types.RSObject;
 import org.tribot.api2007.types.RSTile;
 import org.tribot.api.Timing;
 import org.tribot.api.types.generic.Condition;
-import scripts.SPZeahBloods.constants.Animations;
-import scripts.SPZeahBloods.constants.ObjectNames;
 import scripts.SPZeahBloods.constants.Positions;
-import scripts.SPZeahBloods.actions.AFK;
 import scripts.SPZeahBloods.util.Task;
 
 public class GoToDarkAltar implements Task {
@@ -32,7 +25,7 @@ public class GoToDarkAltar implements Task {
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
         General.println("SHOULD GO TO DARK ALTAR " + (Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos)));
-        return (Inventory.isFull() && !Positions.atDarkAltar() && Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
+        return (/*Inventory.isFull() && !Positions.atDarkAltar() && */ Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
     }
 
     @Override
