@@ -1,4 +1,4 @@
-package scripts.SPZeahBloods.tasks;
+package scripts.SPZeahBloods.src.tasks;
 
 /**
  * Created by Adar on 6/11/17.
@@ -9,8 +9,8 @@ import org.tribot.api2007.*;
 import org.tribot.api2007.types.RSTile;
 import org.tribot.api.Timing;
 import org.tribot.api.types.generic.Condition;
-import scripts.SPZeahBloods.constants.Positions;
-import scripts.SPZeahBloods.util.Task;
+import scripts.SPZeahBloods.src.constants.Positions;
+import scripts.SPZeahBloods.src.util.Task;
 
 public class GoToDarkAltar implements Task {
 

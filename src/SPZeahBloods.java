@@ -2,24 +2,25 @@
  * Created by Adar on 6/9/17.
  */
 
-package scripts.SPZeahBloods;
+package scripts.SPZeahBloods.src;
 
 import org.tribot.api.General;
 import org.tribot.api2007.*;
 import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
-import scripts.SPZeahBloods.constants.ItemIds;
-import scripts.SPZeahBloods.constants.Positions;
-import scripts.SPZeahBloods.util.ACamera;
-import scripts.SPZeahBloods.util.Task;
-import scripts.SPZeahBloods.util.TaskSet;
-import scripts.SPZeahBloods.tasks.MineBlock;
-import scripts.SPZeahBloods.tasks.LookAtOtherBlock;
-import scripts.SPZeahBloods.tasks.GoToExitShortcut;
-import scripts.SPZeahBloods.tasks.GoOverExitShortcut;
-import scripts.SPZeahBloods.tasks.GoToDarkAltar;
-import scripts.SPZeahBloods.tasks.CraftEssence;
-import scripts.SPZeahBloods.tasks.VenerateEssence;
+import scripts.SPZeahBloods.src.constants.ItemIds;
+import scripts.SPZeahBloods.src.constants.Positions;
+import scripts.SPZeahBloods.src.util.ACamera;
+import scripts.SPZeahBloods.src.util.Task;
+import scripts.SPZeahBloods.src.util.TaskSet;
+import scripts.SPZeahBloods.src.tasks.MineBlock;
+import scripts.SPZeahBloods.src.tasks.LookAtOtherBlock;
+import scripts.SPZeahBloods.src.tasks.GoToExitShortcut;
+import scripts.SPZeahBloods.src.tasks.GoOverExitShortcut;
+import scripts.SPZeahBloods.src.tasks.GoToDarkAltar;
+import scripts.SPZeahBloods.src.tasks.CraftEssence;
+import scripts.SPZeahBloods.src.tasks.VenerateEssence;
+import scripts.SPZeahBloods.src.tasks.ReturnToDAMineEntraceShortcut;
 import org.tribot.api.util.abc.ABCUtil;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
@@ -44,7 +45,8 @@ public class SPZeahBloods extends Script {
                 new GoOverExitShortcut(),
                 new GoToDarkAltar(),
                 new CraftEssence(),
-                new VenerateEssence()
+                new VenerateEssence(),
+                new ReturnToDAMineEntraceShortcut()
         );
         while (true) {
             sleep(40, 75);

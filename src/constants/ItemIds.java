@@ -2,7 +2,7 @@
  * Created by Adar on 6/10/17.
  */
 
-package scripts.SPZeahBloods.constants;
+package scripts.SPZeahBloods.src.constants;
 
 public class ItemIds {
     public static final int DENSE_ESSENCE_BLOCK_ID = 13445;

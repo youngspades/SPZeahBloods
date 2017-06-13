@@ -2,7 +2,7 @@
  * Created by Adar on 6/10/17.
  */
 
-package scripts.SPZeahBloods.constants;
+package scripts.SPZeahBloods.src.constants;
 
 import org.tribot.api2007.Player;
 

@@ -2,7 +2,7 @@
  * Created by Adar on 6/10/17.
  */
 
-package scripts.SPZeahBloods.constants;
+package scripts.SPZeahBloods.src.constants;
 
 public class ObjectNames {
     public static final String DENSE_RUNE_STONE_NAME = "Dense runestone";

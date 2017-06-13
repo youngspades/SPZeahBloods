@@ -1,4 +1,4 @@
-package scripts.SPZeahBloods.util;
+package scripts.SPZeahBloods.src.util;
 
 import org.tribot.api.General;
 import org.tribot.api.interfaces.Positionable;

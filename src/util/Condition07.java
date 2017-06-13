@@ -1,4 +1,4 @@
-package scripts.SPZeahBloods.util;
+package scripts.SPZeahBloods.src.util;
 
 /**
  * @author Encoded

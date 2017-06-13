@@ -1,4 +1,4 @@
-package scripts.SPZeahBloods.tasks;
+package scripts.SPZeahBloods.src.tasks;
 
 /**
  * Created by Adar on 6/10/17.
@@ -9,9 +9,9 @@ import org.tribot.api2007.Camera;
 import org.tribot.api2007.Objects;
 import org.tribot.api2007.types.RSObject;
 import org.tribot.api2007.types.RSTile;
-import scripts.SPZeahBloods.constants.Animations;
-import scripts.SPZeahBloods.constants.ObjectNames;
-import scripts.SPZeahBloods.util.Task;
+import scripts.SPZeahBloods.src.constants.Animations;
+import scripts.SPZeahBloods.src.constants.ObjectNames;
+import scripts.SPZeahBloods.src.util.Task;
 
 public class LookAtOtherBlock implements Task {
 

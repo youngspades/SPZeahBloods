@@ -3,7 +3,7 @@
  * Created by Adar on 6/10/17.
  */
 
-package scripts.SPZeahBloods.tasks;
+package scripts.SPZeahBloods.src.tasks;
 
 import org.tribot.api.General;
 import org.tribot.api.DynamicClicking;
@@ -12,11 +12,11 @@ import org.tribot.api2007.types.RSObject;
 import org.tribot.api2007.types.RSTile;
 import org.tribot.api.Timing;
 import org.tribot.api.types.generic.Condition;
-import scripts.SPZeahBloods.SPZeahBloods;
-import scripts.SPZeahBloods.constants.Animations;
-import scripts.SPZeahBloods.constants.ObjectNames;
-import scripts.SPZeahBloods.constants.Positions;
-import scripts.SPZeahBloods.util.Task;
+import scripts.SPZeahBloods.src.SPZeahBloods;
+import scripts.SPZeahBloods.src.constants.Animations;
+import scripts.SPZeahBloods.src.constants.ObjectNames;
+import scripts.SPZeahBloods.src.constants.Positions;
+import scripts.SPZeahBloods.src.util.Task;
 
 public class MineBlock implements Task {
 

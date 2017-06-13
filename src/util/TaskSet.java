@@ -1,9 +1,7 @@
-package scripts.SPZeahBloods.util;
+package scripts.SPZeahBloods.src.util;
 
 import java.util.Arrays;
 import java.util.TreeSet;
-import scripts.SPZeahBloods.util.Condition07;
-import scripts.SPZeahBloods.util.Task;
 
 /**
  * @see <a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html">java.util.TreeSet</a>
