@@ -21,6 +21,8 @@ import scripts.SPZeahBloods.src.tasks.GoToDarkAltar;
 import scripts.SPZeahBloods.src.tasks.CraftEssence;
 import scripts.SPZeahBloods.src.tasks.VenerateEssence;
 import scripts.SPZeahBloods.src.tasks.ReturnToDAMineEntraceShortcut;
+import scripts.SPZeahBloods.src.tasks.GoOverEntranceShortcut;
+import scripts.SPZeahBloods.src.tasks.ReturnToMine;
 import org.tribot.api.util.abc.ABCUtil;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
@@ -46,7 +48,9 @@ public class SPZeahBloods extends Script {
                 new GoToDarkAltar(),
                 new CraftEssence(),
                 new VenerateEssence(),
-                new ReturnToDAMineEntraceShortcut()
+                new ReturnToDAMineEntraceShortcut(),
+                new GoOverEntranceShortcut(),
+                new ReturnToMine()
         );
         while (true) {
             sleep(40, 75);
