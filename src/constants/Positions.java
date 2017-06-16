@@ -57,7 +57,7 @@ public class Positions {
     });
 
     public static final RSArea getBloodAltarArea() {
-        return Positions.EXIT_MINE_AGILITY_AREA;
+        return Positions.BLOOD_ALTAR_AREA;
     }
 
     private static final RSArea EXIT_MINE_AGILITY_AREA = new RSArea(new RSTile[] {

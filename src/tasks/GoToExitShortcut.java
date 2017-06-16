@@ -12,6 +12,7 @@ import org.tribot.api.types.generic.Condition;
 import scripts.SPZeahBloods.src.SPZeahBloods;
 import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
+import scripts.webwalker_logic.*;
 
 public class GoToExitShortcut implements Task {
 
@@ -31,9 +32,7 @@ public class GoToExitShortcut implements Task {
 
     @Override
     public void execute() {
-        if (!Walking.clickTileMM(tile, 1))
-            WebWalking.walkTo(tile);
-
+        WebWalker.walkTo(tile);
         SPZeahBloods.aCamera.turnToTile(tile);
         Timing.waitCondition(new Condition() {
             @Override

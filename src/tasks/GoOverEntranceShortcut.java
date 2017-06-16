@@ -27,7 +27,7 @@ public class GoOverEntranceShortcut implements Task {
     @Override
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
-        return (Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) > 0 &&  tile.distanceTo(playerPos) <= 9 &&
+        return (!Inventory.isFull() && Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) > 0 &&  tile.distanceTo(playerPos) <= 9 &&
                 Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos) > Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos));
     }
 

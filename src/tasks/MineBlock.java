@@ -17,6 +17,7 @@ import scripts.SPZeahBloods.src.constants.Animations;
 import scripts.SPZeahBloods.src.constants.ObjectNames;
 import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
+import scripts.webwalker_logic.*;
 
 public class MineBlock implements Task {
 
@@ -40,7 +41,6 @@ public class MineBlock implements Task {
         if (objects.length > 0) {
             General.println("essence can be chipped");
             RSTile tile = objects[0].getPosition();
-            SPZeahBloods.aCamera.turnToTile(tile);
             if (objects[0].isOnScreen()) {
                 if (DynamicClicking.clickRSObject(objects[0], "Chip")) {
                     General.println("essence on screen");
@@ -54,7 +54,8 @@ public class MineBlock implements Task {
                 }
             } else {
                 General.println("should be walking");
-                Walking.clickTileMM(Positions.getSeeMineArea().getRandomTile(), 1);
+                WebWalker.walkTo(Positions.getSeeMineArea().getRandomTile());
+                SPZeahBloods.aCamera.turnToTile(tile);
                 Timing.waitCondition(new Condition() {
                     @Override
                     public boolean active() {

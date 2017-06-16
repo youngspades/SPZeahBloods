@@ -13,6 +13,7 @@ import scripts.SPZeahBloods.src.SPZeahBloods;
 import scripts.SPZeahBloods.src.constants.Animations;
 import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
+import scripts.webwalker_logic.WebWalker;
 
 public class ReturnToMine implements Task {
 
@@ -32,7 +33,7 @@ public class ReturnToMine implements Task {
 
     @Override
     public void execute() {
-        Walking.clickTileMM(Positions.getSeeMineArea().getRandomTile(), 1);
+        WebWalker.walkTo(Positions.getSeeMineArea().getRandomTile());
         Timing.waitCondition(new Condition() {
             @Override
             public boolean active() {

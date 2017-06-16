@@ -9,4 +9,5 @@ public class ItemIds {
     public static final int DARK_ESSENCE_BLOCK_ID = 13446;
     public static final int DARK_ESSENCE_FRAGMENTS_ID = 7938;
     public static final int CHISEL_ID = 1755;
+    public static final int BLOOD_RUNES_ID = 1755;
 }

@@ -21,7 +21,7 @@ public class CraftEssence implements Task {
     @Override
     public boolean validate() {
         //RSTile playerPos = Player.getPosition();
-        return (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) > 1 && Inventory.getCount(ItemIds.CHISEL_ID) == 1);
+        return (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) >= 1 && Inventory.getCount(ItemIds.CHISEL_ID) == 1);
     }
 
     @Override

@@ -40,10 +40,9 @@ public class VenerateEssence implements Task {
     public void execute() {
         RSObject[] objects = Objects.findNearest(40, ObjectNames.DARK_ALTAR_NAME);
 
-        // If essence can be chipped
+        // If altar exists
         if (objects.length > 0) {
             RSTile tile = objects[0].getPosition();
-            SPZeahBloods.aCamera.turnToTile(tile);
             if (objects[0].isOnScreen()) {
                 if (DynamicClicking.clickRSObject(objects[0], "Venerate")) {
                     Timing.waitCondition(new Condition() {
@@ -58,6 +57,7 @@ public class VenerateEssence implements Task {
                 }
             } else {
                 WebWalking.walkTo(Positions.getDarkAltarArea().getRandomTile());
+                SPZeahBloods.aCamera.turnToTile(tile);
             }
         }
     }

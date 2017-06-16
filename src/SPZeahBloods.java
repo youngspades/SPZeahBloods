@@ -10,19 +10,10 @@ import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
 import scripts.SPZeahBloods.src.constants.ItemIds;
 import scripts.SPZeahBloods.src.constants.Positions;
+import scripts.SPZeahBloods.src.tasks.*;
 import scripts.SPZeahBloods.src.util.ACamera;
 import scripts.SPZeahBloods.src.util.Task;
 import scripts.SPZeahBloods.src.util.TaskSet;
-import scripts.SPZeahBloods.src.tasks.MineBlock;
-import scripts.SPZeahBloods.src.tasks.LookAtOtherBlock;
-import scripts.SPZeahBloods.src.tasks.GoToExitShortcut;
-import scripts.SPZeahBloods.src.tasks.GoOverExitShortcut;
-import scripts.SPZeahBloods.src.tasks.GoToDarkAltar;
-import scripts.SPZeahBloods.src.tasks.CraftEssence;
-import scripts.SPZeahBloods.src.tasks.VenerateEssence;
-import scripts.SPZeahBloods.src.tasks.ReturnToDAMineEntraceShortcut;
-import scripts.SPZeahBloods.src.tasks.GoOverEntranceShortcut;
-import scripts.SPZeahBloods.src.tasks.ReturnToMine;
 import org.tribot.api.util.abc.ABCUtil;
 
 @ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
@@ -50,7 +41,9 @@ public class SPZeahBloods extends Script {
                 new VenerateEssence(),
                 new ReturnToDAMineEntraceShortcut(),
                 new GoOverEntranceShortcut(),
-                new ReturnToMine()
+                new ReturnToMine(),
+                new GoToBloodAltar(),
+                new CraftBloodRunes()
         );
         while (true) {
             sleep(40, 75);

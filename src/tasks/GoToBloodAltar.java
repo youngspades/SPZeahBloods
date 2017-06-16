@@ -9,23 +9,25 @@ import org.tribot.api2007.*;
 import org.tribot.api2007.types.RSTile;
 import org.tribot.api.Timing;
 import org.tribot.api.types.generic.Condition;
+import scripts.SPZeahBloods.src.constants.ItemIds;
 import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
 import scripts.webwalker_logic.*;
 
-public class GoToDarkAltar implements Task {
+public class GoToBloodAltar implements Task {
 
-    private RSTile tile = Positions.getDarkAltarArea().getRandomTile();
+    private RSTile tile = Positions.getBloodAltarArea().getRandomTile();
 
     @Override
     public int priority() {
-        return 0;
+        return 2;
     }
 
     @Override
     public boolean validate() {
-        RSTile playerPos = Player.getPosition();
-        return (Inventory.isFull() && !Positions.atDarkAltar() && Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
+        return (Inventory.isFull() && Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) >= 1
+            && Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) >= 1
+        );
     }
 
     @Override
