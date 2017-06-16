@@ -28,9 +28,6 @@ public class VenerateEssence implements Task {
 
     @Override
     public boolean validate() {
-        General.println(Inventory.isFull());
-        General.println(Inventory.getCount(ItemIds.DENSE_ESSENCE_BLOCK_ID));
-        General.println(Positions.atDarkAltar());
         return (Inventory.isFull() && Inventory.getCount(ItemIds.DENSE_ESSENCE_BLOCK_ID) > 10
                 && Positions.atDarkAltar()
         );

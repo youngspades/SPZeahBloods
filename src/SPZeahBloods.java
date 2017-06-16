@@ -40,7 +40,7 @@ public class SPZeahBloods extends Script {
                 new CraftEssence(),
                 new VenerateEssence(),
                 new GoToDarkAltarShortcut(),
-                new GoOverEntranceShortcut(),
+                new GoOverDarkAltarShortcut(),
                 new ReturnToMine(),
                 new GoToBloodAltar(),
                 new CraftBloodRunes()

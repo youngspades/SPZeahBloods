@@ -15,7 +15,7 @@ import scripts.SPZeahBloods.src.constants.ItemIds;
 import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
 
-public class GoOverEntranceShortcut implements Task {
+public class GoOverDarkAltarShortcut implements Task {
 
     private RSTile tile = Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE;
 
