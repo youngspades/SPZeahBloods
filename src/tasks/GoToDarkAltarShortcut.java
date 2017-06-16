@@ -15,13 +15,13 @@ import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
 import scripts.webwalker_logic.*;
 
-public class ReturnToDAMineEntraceShortcut implements Task {
+public class GoToDarkAltarShortcut implements Task {
 
     private RSTile tile = Positions.getEnterMineAgilityArea().getRandomTile();
 
     @Override
     public int priority() {
-        return 0;
+        return 2;
     }
 
     @Override
