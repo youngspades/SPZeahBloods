@@ -27,12 +27,15 @@ public class GoToDarkAltarShortcut implements Task {
     @Override
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
-        return (!Inventory.isFull() && Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) > 0 &&
-                Positions.getDarkAltarArea().getRandomTile().distanceTo(playerPos) < Positions.getMineArea().getRandomTile().distanceTo(playerPos));
+        return (!Inventory.isFull() && Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) > 0
+                && (Positions.getDarkAltarArea().getRandomTile().distanceTo(playerPos)
+                    < Positions.getMineArea().getRandomTile().distanceTo(playerPos))
+                && (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) <= 0));
     }
 
     @Override
     public void execute() {
+        SPZeahBloods.shouldGoToBloodAltar = true;
         WebWalker.walkTo(tile);
 
         SPZeahBloods.aCamera.turnToTile(tile);

@@ -28,10 +28,11 @@ public class CraftBloodRunes implements Task {
 
     @Override
     public boolean validate() {
+        int darkEssenceBlockCount = Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID);
         boolean hasFragments = Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) >= 1;
-        boolean hasCorrectDenseAmount = ((Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) == 25 && Inventory.getCount(ItemIds.BLOOD_RUNES_ID) >= 1)
-                    || (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) == 26 && Inventory.getCount(ItemIds.BLOOD_RUNES_ID) == 0)
-                    || (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) == 0));
+        boolean hasCorrectDenseAmount = (((darkEssenceBlockCount == 24 || darkEssenceBlockCount == 25) && Inventory.getCount(ItemIds.BLOOD_RUNES_ID) >= 1)
+                    || (darkEssenceBlockCount == 26 && Inventory.getCount(ItemIds.BLOOD_RUNES_ID) == 0)
+                    || (darkEssenceBlockCount == 0));
 
         return (hasFragments && hasCorrectDenseAmount
                 && Positions.atBloodAltar()

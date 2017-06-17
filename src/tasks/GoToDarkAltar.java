@@ -31,6 +31,7 @@ public class GoToDarkAltar implements Task {
     @Override
     public void execute() {
         WebWalker.walkTo(tile);
+        General.println(!Positions.atDarkAltar());
         General.sleep(1000, 1500);
         Timing.waitCondition(new Condition() {
             @Override

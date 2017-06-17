@@ -10,41 +10,37 @@ import org.tribot.api2007.types.RSTile;
 import org.tribot.api.Timing;
 import org.tribot.api.types.generic.Condition;
 import scripts.SPZeahBloods.src.SPZeahBloods;
+import scripts.SPZeahBloods.src.constants.Animations;
 import scripts.SPZeahBloods.src.constants.ItemIds;
 import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
-import scripts.webwalker_logic.*;
 
-public class GoToBloodAltar implements Task {
+public class GoOverBloodAltarShortcut implements Task {
 
-    private RSTile tile = Positions.getBloodAltarArea().getRandomTile();
+    private RSTile tile = Positions.BLOOD_ALTAR_TO_MINE_SHORTCUT_TILE;
 
     @Override
     public int priority() {
-        return 2;
+        return 1;
     }
 
     @Override
     public boolean validate() {
-        return (Inventory.isFull() && (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) >= 1)
-                && (Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) >= 1)
-                && SPZeahBloods.shouldGoToBloodAltar
-                && !Positions.atBloodAltar()
-        );
+        RSTile playerPos = Player.getPosition();
+        return (!Inventory.isFull() && tile.distanceTo(playerPos) <= 9 &&
+                Positions.getMineArea().getRandomTile().distanceTo(playerPos) > Positions.BLOOD_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos));
     }
 
     @Override
     public void execute() {
-        General.println("WALKINGGGGGG2");
-        WebWalker.walkTo(tile);
-        General.println("WALKINGGGGGG3");
-        General.sleep(1000, 1500);
+        SPZeahBloods.aCamera.turnToTile(tile);
+        Walking.clickTileMS(tile, "rocks");
         Timing.waitCondition(new Condition() {
             @Override
             public boolean active() {
                 General.sleep(100); // Add this in to reduce CPU usage
-                return (!Player.isMoving());
+                return (!Player.isMoving() && Player.getAnimation() != Animations.CLIMB_ANIM);
             }
-        }, General.random(1350, 2350));
+        }, General.random(1250, 2200));
     }
 }

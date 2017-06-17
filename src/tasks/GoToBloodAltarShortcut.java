@@ -1,7 +1,7 @@
 package scripts.SPZeahBloods.src.tasks;
 
 /**
- * Created by Adar on 6/11/17.
+ * Created by Adar on 6/16/17.
  */
 
 import org.tribot.api.General;
@@ -15,30 +15,31 @@ import scripts.SPZeahBloods.src.constants.Positions;
 import scripts.SPZeahBloods.src.util.Task;
 import scripts.webwalker_logic.*;
 
-public class GoToBloodAltar implements Task {
+public class GoToBloodAltarShortcut implements Task {
 
-    private RSTile tile = Positions.getBloodAltarArea().getRandomTile();
+    private RSTile tile = Positions.getBloodAltarShortcutArea().getRandomTile();
 
     @Override
     public int priority() {
-        return 2;
+        return 0;
     }
 
     @Override
     public boolean validate() {
-        return (Inventory.isFull() && (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) >= 1)
-                && (Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) >= 1)
-                && SPZeahBloods.shouldGoToBloodAltar
-                && !Positions.atBloodAltar()
+        RSTile playerPos = Player.getPosition();
+        return (!Inventory.isFull()
+                && (Positions.BLOOD_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos)
+                > Positions.getBloodAltarArea().getRandomTile().distanceTo(playerPos))
+                && (Inventory.getCount(ItemIds.DARK_ESSENCE_FRAGMENTS_ID) <= 0)
         );
     }
 
     @Override
     public void execute() {
-        General.println("WALKINGGGGGG2");
+        SPZeahBloods.shouldGoToBloodAltar = false;
         WebWalker.walkTo(tile);
-        General.println("WALKINGGGGGG3");
-        General.sleep(1000, 1500);
+
+        SPZeahBloods.aCamera.turnToTile(tile);
         Timing.waitCondition(new Condition() {
             @Override
             public boolean active() {

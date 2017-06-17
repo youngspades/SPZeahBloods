@@ -29,6 +29,9 @@ public class CraftEssence implements Task {
         RSItem[] essence = Inventory.find(ItemIds.DARK_ESSENCE_BLOCK_ID);
         RSItem chisel = Inventory.find(ItemIds.CHISEL_ID)[0];
 
+        if (Inventory.getCount(ItemIds.DARK_ESSENCE_BLOCK_ID) == 0)
+            return;
+
         if (chisel != null && essence != null) {
             essence[essence.length - 1].click("Use");
             if (Game.getSelectedItemName() == ObjectNames.DENSE_RUNE_STONE_NAME) {

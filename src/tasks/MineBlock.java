@@ -23,7 +23,7 @@ public class MineBlock implements Task {
 
     @Override
     public int priority() {
-        return 0;
+        return 1;
     }
 
     @Override
