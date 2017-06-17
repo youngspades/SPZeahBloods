@@ -21,6 +21,9 @@ public class SPZeahBloods extends Script {
 
     public static ACamera aCamera = new ACamera();
 
+    // this is used because of logic issue with full inventory of dark ess with fragemnts while crafting
+    public static boolean shouldGoToBloodAltar = false;
+
     private State state;
     private boolean shouldCraftFull = true;
     ABCUtil abcUtil = new ABCUtil();
@@ -43,7 +46,9 @@ public class SPZeahBloods extends Script {
                 new GoOverDarkAltarShortcut(),
                 new ReturnToMine(),
                 new GoToBloodAltar(),
-                new CraftBloodRunes()
+                new CraftBloodRunes(),
+                new GoToBloodAltarShortcut(),
+                new GoOverBloodAltarShortcut()
         );
         while (true) {
             sleep(40, 75);

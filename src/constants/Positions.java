@@ -70,6 +70,17 @@ public class Positions {
         return Positions.EXIT_MINE_AGILITY_AREA;
     }
 
+    private static final RSArea BLOOD_ALTAR_SHORTCUT_AREA = new RSArea(new RSTile[] {
+            new RSTile(1742, 3855, 0),
+            new RSTile(1737, 3855, 0),
+            new RSTile(1737, 3851, 0),
+            new RSTile(1742, 3851, 0),
+    });
+
+    public static final RSArea getBloodAltarShortcutArea() {
+        return Positions.BLOOD_ALTAR_SHORTCUT_AREA;
+    }
+
     private static final RSArea ENTER_MINE_AGILITY_AREA = new RSArea(new RSTile[] {
             new RSTile(1757, 3879, 0),
             new RSTile(1756, 3873, 0),
