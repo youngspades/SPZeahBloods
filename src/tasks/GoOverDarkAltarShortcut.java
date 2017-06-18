@@ -34,7 +34,9 @@ public class GoOverDarkAltarShortcut implements Task {
     @Override
     public void execute() {
         SPZeahBloods.aCamera.turnToTile(tile);
+        General.sleep(300, 800);
         Walking.clickTileMS(tile, "rocks");
+        General.sleep(600, 1200);
         Timing.waitCondition(new Condition() {
             @Override
             public boolean active() {

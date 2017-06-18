@@ -16,7 +16,7 @@ import scripts.SPZeahBloods.src.util.Task;
 import scripts.SPZeahBloods.src.util.TaskSet;
 import org.tribot.api.util.abc.ABCUtil;
 
-@ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location.")
+@ScriptManifest(authors={"Spades"}, category="Runecrafting", name="SPZeahBloods", description="Start at runestone location with just a chisel.")
 public class SPZeahBloods extends Script {
 
     public static ACamera aCamera = new ACamera();

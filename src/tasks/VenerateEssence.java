@@ -29,7 +29,7 @@ public class VenerateEssence implements Task {
     @Override
     public boolean validate() {
         return (Inventory.isFull() && Inventory.getCount(ItemIds.DENSE_ESSENCE_BLOCK_ID) > 10
-                && Positions.atDarkAltar()
+                && Positions.getDarkAltarArea().contains(Player.getPosition())
         );
     }
 
@@ -42,6 +42,7 @@ public class VenerateEssence implements Task {
             RSTile tile = objects[0].getPosition();
             if (objects[0].isOnScreen()) {
                 if (DynamicClicking.clickRSObject(objects[0], "Venerate")) {
+                    General.sleep(600, 1400);
                     Timing.waitCondition(new Condition() {
                         @Override
                         public boolean active() {
@@ -52,9 +53,10 @@ public class VenerateEssence implements Task {
                 } else {
                     WebWalking.walkTo(Positions.getDarkAltarArea().getRandomTile());
                 }
+                General.sleep(300, 800);
             } else {
-                WebWalking.walkTo(Positions.getDarkAltarArea().getRandomTile());
                 SPZeahBloods.aCamera.turnToTile(tile);
+                General.sleep(1000, 2200);
             }
         }
     }

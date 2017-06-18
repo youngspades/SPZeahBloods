@@ -15,7 +15,7 @@ import scripts.webwalker_logic.*;
 
 public class GoToDarkAltar implements Task {
 
-    private RSTile tile = Positions.getDarkAltarArea().getRandomTile();
+    private RSTile tile = Positions.getGoToDarkAltarArea().getRandomTile();
 
     @Override
     public int priority() {
@@ -25,13 +25,18 @@ public class GoToDarkAltar implements Task {
     @Override
     public boolean validate() {
         RSTile playerPos = Player.getPosition();
-        return (Inventory.isFull() && !Positions.atDarkAltar() && Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
+        return (Inventory.isFull() && !Positions.getDarkAltarArea().contains(Player.getPosition()) && Positions.DARK_ALTAR_TO_MINE_SHORTCUT_TILE.distanceTo(playerPos) < Positions.MINE_TO_DARK_ALTAR_SHORTCUT_TILE.distanceTo(playerPos));
     }
 
     @Override
     public void execute() {
-        WebWalker.walkTo(tile);
-        General.println(!Positions.atDarkAltar());
+        if (WebWalker.walkTo(tile)) {
+
+        } else {
+            General.println("GO DARK ALTAR BROKEN");
+            General.println(tile.toString());
+        }
+        General.println(!Positions.getDarkAltarArea().contains(Player.getPosition()));
         General.sleep(1000, 1500);
         Timing.waitCondition(new Condition() {
             @Override

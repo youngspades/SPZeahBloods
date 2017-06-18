@@ -36,7 +36,12 @@ public class GoToDarkAltarShortcut implements Task {
     @Override
     public void execute() {
         SPZeahBloods.shouldGoToBloodAltar = true;
-        WebWalker.walkTo(tile);
+
+        if (WebWalker.walkTo(tile)) {
+        } else {
+            General.println("DARK ALTAR SHORTCUT BROKEN");
+            General.println(tile.toString());
+        }
 
         SPZeahBloods.aCamera.turnToTile(tile);
         Timing.waitCondition(new Condition() {

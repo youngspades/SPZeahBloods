@@ -36,7 +36,12 @@ public class GoToBloodAltar implements Task {
     @Override
     public void execute() {
         General.println("WALKINGGGGGG2");
-        WebWalker.walkTo(tile);
+        if (WebWalker.walkTo(tile)) {
+
+        } else {
+            General.println("BLOOD ALTAR BROKEN");
+            General.println(tile.toString());
+        }
         General.println("WALKINGGGGGG3");
         General.sleep(1000, 1500);
         Timing.waitCondition(new Condition() {

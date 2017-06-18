@@ -34,6 +34,7 @@ public class GoOverExitShortcut implements Task {
     public void execute() {
         SPZeahBloods.aCamera.turnToTile(tile);
         Walking.clickTileMS(tile, "rocks");
+        General.sleep(1000, 2800);
         Timing.waitCondition(new Condition() {
             @Override
             public boolean active() {

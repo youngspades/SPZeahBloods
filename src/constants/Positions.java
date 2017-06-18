@@ -36,11 +36,26 @@ public class Positions {
         return Positions.MINE_AREA;
     }
 
+    private static final RSArea GO_TO_DARK_ALTAR_AREA = new RSArea(new RSTile[] {
+            new RSTile(1715, 3878, 0),
+            new RSTile(1721, 3878, 0),
+            new RSTile(1721, 3889, 0),
+            new RSTile(1715, 3889, 0),
+            new RSTile(1715, 3885, 0),
+            new RSTile(1715, 3885, 0),
+            new RSTile(1718, 3881, 0),
+            new RSTile(1715, 3881, 0),
+    });
+
+    public static final RSArea getGoToDarkAltarArea() {
+        return Positions.GO_TO_DARK_ALTAR_AREA;
+    }
+
     private static final RSArea DARK_ALTAR_AREA = new RSArea(new RSTile[] {
-            new RSTile(1723, 3878, 0),
-            new RSTile(1723, 3890, 0),
-            new RSTile(1709, 3887, 0),
-            new RSTile(1705, 3880, 0),
+            new RSTile(1715, 3878, 0),
+            new RSTile(1721, 3878, 0),
+            new RSTile(1721, 3889, 0),
+            new RSTile(1715, 3889, 0),
     });
 
     public static final RSArea getDarkAltarArea() {
@@ -48,12 +63,10 @@ public class Positions {
     }
 
     private static final RSArea BLOOD_ALTAR_AREA = new RSArea(new RSTile[] {
-            new RSTile(1733, 3835, 0),
-            new RSTile(1736, 3826, 0),
-            new RSTile(1729, 3824, 0),
-            new RSTile(1714, 3825, 0),
-            new RSTile(1713, 3834, 0),
-            new RSTile(1721, 3832, 0),
+            new RSTile(1719, 3826, 0),
+            new RSTile(1722, 3826, 0),
+            new RSTile(1722, 3830, 0),
+            new RSTile(1719, 3831, 0),
     });
 
     public static final RSArea getBloodAltarArea() {
@@ -61,9 +74,9 @@ public class Positions {
     }
 
     private static final RSArea EXIT_MINE_AGILITY_AREA = new RSArea(new RSTile[] {
-            new RSTile(1761, 3871, 0),
-            new RSTile(1766, 3869, 0),
-            new RSTile(1757, 3868, 0),
+            new RSTile(1756, 3866, 0),
+            new RSTile(1756, 3868, 0),
+            new RSTile(1760, 3869, 0),
     });
 
     public static final RSArea getExitMineAgilityArea() {
@@ -82,10 +95,10 @@ public class Positions {
     }
 
     private static final RSArea ENTER_MINE_AGILITY_AREA = new RSArea(new RSTile[] {
-            new RSTile(1757, 3879, 0),
-            new RSTile(1756, 3873, 0),
-            new RSTile(1761, 3871, 0),
-            new RSTile(1763, 3880, 0),
+            new RSTile(1758, 3876, 0),
+            new RSTile(1761, 3876, 0),
+            new RSTile(1761, 3878, 0),
+            new RSTile(1757, 3878, 0),
     });
 
     public static final RSArea getEnterMineAgilityArea() {

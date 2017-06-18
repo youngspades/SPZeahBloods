@@ -32,9 +32,13 @@ public class GoToExitShortcut implements Task {
 
     @Override
     public void execute() {
-        General.println("WALKINGGGGGG");
-        WebWalker.walkTo(tile);
-        General.println("WALKINGGGGGG1");
+        if (WebWalker.walkTo(tile)) {
+            General.println("WALKINGGGGGG");
+        } else {
+            General.println("WALKINGGGGGG1");
+            General.println("FAULTY TILE");
+            General.println(tile.toString());
+        }
         SPZeahBloods.aCamera.turnToTile(tile);
         Timing.waitCondition(new Condition() {
             @Override
